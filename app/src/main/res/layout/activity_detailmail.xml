@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".detailmail">
+
+    <ScrollView
+        android:id="@+id/scrollabledetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:background="#7A7A7A"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmailSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="80dp"
+                android:layout_toEndOf="@+id/tvIcon"
+                android:layout_toRightOf="@+id/tvIcon"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/tvIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmailSender"
+                android:layout_marginStart="-60dp"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="-55dp"
+                android:layout_toEndOf="@+id/tvIcon"
+                android:layout_toRightOf="@+id/tvIcon"
+                android:text="(no Subject)"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/replybtn"
+                android:layout_width="132dp"
+                android:layout_height="79dp"
+                android:layout_below="@+id/detaildetail"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="41dp"
+
+                android:layout_marginEnd="-18dp"
+                android:layout_toStartOf="@+id/replyallbtn"
+                android:backgroundTint="#FFFFFF"
+                android:text="Reply"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detaildetail" />
+
+            <Button
+                android:id="@+id/replyallbtn"
+                android:layout_width="99dp"
+                android:layout_height="88dp"
+                android:layout_below="@+id/detaildetail"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="22dp"
+
+                android:layout_marginBottom="0dp"
+                android:layout_toStartOf="@+id/forwardbtn"
+                android:backgroundTint="#FFFFFF"
+                android:text="reply all"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/forwardbtn"
+                app:layout_constraintHorizontal_bias="0.631"
+                app:layout_constraintStart_toEndOf="@+id/replybtn"
+                app:layout_constraintTop_toBottomOf="@+id/detaildetail" />
+
+            <Button
+                android:id="@+id/forwardbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_below="@+id/detaildetail"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="9dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="forward"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detaildetail" />
+
+            <TextView
+                android:id="@+id/detaildetail"
+                android:layout_width="336dp"
+                android:layout_height="623dp"
+                android:layout_below="@+id/tvIcon"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="31dp"
+                android:text="(none)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIcon" />
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvIcon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="-20dp"
+                android:layout_marginBottom="82dp"
+                android:layout_toStartOf="@+id/subject"
+                android:backgroundTint="#FFFFFF"
+                android:text="⬅"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/back_button3"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="⬅"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tanggaldetail"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginBottom="66dp"
+                android:layout_toEndOf="@+id/tvEmailSender"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/bulandetail"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-39dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="66dp"
+                android:layout_toStartOf="@+id/back_button3"
+                android:layout_toEndOf="@+id/tanggaldetail"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tothisuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="103dp"
+                android:layout_toEndOf="@+id/tvIcon"
+                android:text="To (this User)" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

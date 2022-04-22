@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/activity_addmail.xml" value="0.25" />
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/activity_detailmail.xml" value="0.5" />
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/activity_maillinelit.xml" value="0.9410876132930514" />
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/activity_main.xml" value="0.28378378378378377" />
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/maillinelit.xml" value="0.67" />
+        <entry key="..\:/my android/miniprojectUTS/app/src/main/res/layout/test.xml" value="0.35597826086956524" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
